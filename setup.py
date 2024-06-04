@@ -2,15 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name='Cherv',
-    version='0.2.1',
+    version='0.3',
     packages=find_packages(),
     description='An analogue of CowSay, only instead of a cow there is a worm.',
     long_description=\
     """
-    An analogue of CowSay, only instead of a cow there is a worm.
-    Usage:
-    `python -m cherv [your message]`
-    The message can be entered in any length.
+    An analogue of CowSay, only instead of a cow there is a worm.\n
+    Usage:\n
+    ``python -m cherv [your message]``\n
+    The message can be entered in any length.\n
     """,
     author='Павел, Евгений',
     maintainer='Павел',
