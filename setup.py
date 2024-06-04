@@ -1,15 +1,17 @@
 from setuptools import setup, find_packages
 
-def readme():
-  with open('README.md', 'r') as f:
-    return f.read()
-
 setup(
     name='Cherv',
-    version='0.1',
+    version='0.2.1',
     packages=find_packages(),
-    description='Аналог CowSay, только вместо коровы - червь.',
-    long_description=readme(),
+    description='An analogue of CowSay, only instead of a cow there is a worm.',
+    long_description=\
+    """
+    An analogue of CowSay, only instead of a cow there is a worm.
+    Usage:
+    `python -m cherv [your message]`
+    The message can be entered in any length.
+    """,
     author='Павел, Евгений',
     maintainer='Павел',
     maintainer_email='nadokto8@gmail.com',
