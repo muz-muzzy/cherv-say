@@ -1,2 +1,7 @@
 venv/
 tests/
+cherv/__pycache__/
+update_PyPi.bat
+dist/
+Cherv.egg-info/
+build/
