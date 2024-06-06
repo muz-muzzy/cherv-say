@@ -1,14 +1,19 @@
 # cherv-say-python
-## Description
-An analogue of CowSay, only instead of a cow there is a worm.
-## Installation and Usage
-Installation:
+## Описание
+Аналог CowSay, только вместо коровы - червяк.
+## Установка и использование
+### Установка:
 ```bash
 pip install cherv
 ```
-Usage:
+### Использование:
 ```bash
 python -m cherv [your message]
 ```
-The message can be entered in any length:
-![Снимок экрана 2024-06-05 043610](https://github.com/AyaalTech/wormsay-python/assets/80465121/627b7ae8-16bb-4eee-8156-49c31ad2726d)
+### Команды:
+```bash
+python -m cherv --help  # выводит справку по использованию
+```
+## Скриншоты:
+![cherv_screenshot](https://github.com/AyaalTech/wormsay-python/assets/80465121/9503a4f2-a4f5-4382-8a15-6677f38f3a2f)
+
