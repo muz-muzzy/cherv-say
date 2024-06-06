@@ -8,12 +8,17 @@ pip install cherv
 ```
 ### Использование:
 ```bash
-python -m cherv [your message]
+cherv [your message]
 ```
 ### Команды:
 ```bash
-python -m cherv --help  # выводит справку по использованию
+cherv --help  # выводит справку по использованию
+```
+```bash
+cherv --skin  # позволяет изменить облик червя
 ```
 ## Скриншоты:
-![cherv_screenshot](https://github.com/AyaalTech/wormsay-python/assets/80465121/9503a4f2-a4f5-4382-8a15-6677f38f3a2f)
+
+
+![Снимок экрана 2024-06-06 160033](https://github.com/AyaalTech/wormsay-python/assets/80465121/7b82236f-6551-4565-adf7-ba283e0f12e0)
 
