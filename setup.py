@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Cherv',
-    version='0.4.8',
+    version='0.5',
     packages=find_packages(),
     description='An analogue of CowSay, only instead of a cow there is a worm.',
     long_description=\
@@ -27,6 +27,6 @@ setup(
         'Topic :: Software Development :: Libraries',
     ],
     keywords='cherv cowsay python library',
-    install_requires=[],
-    python_requires='>=3.7'
+    python_requires='>=3.7',
+    install_requires=['pygame', 'requests']
 )
