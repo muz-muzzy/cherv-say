@@ -3,14 +3,13 @@ from cherv.cherv import cherv_say
 import json
 import os
 
-settings = dict()
 
 def check_settings_file_exists() -> str:
     current_dir = os.path.dirname(os.path.abspath(__file__))
     filename = 'settings.json'
     path_to_settings = os.path.join(current_dir, filename)
     if os.path.isfile(path_to_settings):
-        return path_to_settings
+        pass
     else:
         dictionary = {
             "skin": 0
@@ -19,13 +18,13 @@ def check_settings_file_exists() -> str:
             json.dump(obj=dictionary, fp=f)
     return path_to_settings
 
-json_path = check_settings_file_exists()
 
-settings = json.load(open(json_path, 'r'))
-SKIN = settings["skin"]
-skins = {0: "Белый", 1: "Чёрный"}
 def main():
-    global SKIN
+    json_path = check_settings_file_exists()
+
+    settings = json.load(open(json_path, 'r'))
+    SKIN = settings["skin"]
+    skins = {0: "Белый", 1: "Чёрный"}
     if (len(sys.argv) >= 2):
         if (sys.argv[1] == "--help"):
             print(
@@ -47,7 +46,8 @@ def main():
             SKIN = num
             settings["skin"] = num
             cherv_say("Облик изменён!", skin=SKIN)
-            return         
+            json.dump(obj=settings, fp=open(json_path, 'w'))
+            return
         cherv_say(" ".join(sys.argv[1:]), skin=SKIN)
 
     if len(sys.argv) < 2:
@@ -55,4 +55,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    json.dump(obj=settings, fp=open(json_path, 'w'))
