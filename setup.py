@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Cherv',
-    version='0.5',
+    version='0.5.1',
     packages=find_packages(),
     description='An analogue of CowSay, only instead of a cow there is a worm.',
     long_description=\

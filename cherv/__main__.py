@@ -54,7 +54,7 @@ def main():
 
     settings = json.load(open(json_path, 'r'))
     SKIN = settings["skin"]
-    skins = {0: "Белый", 1: "Чёрный"}
+    skins = {0: "Белый", 1: "Чёрный", 2: "Котик", 3: "Сквидвард"}
     if (len(sys.argv) >= 2):
         if (sys.argv[1] == "--help"):
             print(
@@ -76,7 +76,12 @@ def main():
                 return
             SKIN = num
             settings["skin"] = num
-            cherv_say("Облик изменён!", skin=SKIN)
+            phrase = ""
+            if (SKIN == 0): phrase = "Я дефолтный червяк!"
+            elif (SKIN == 1): phrase = "Я чёрный червяк!🥷"
+            elif (SKIN == 2): phrase = "Мяу :3"
+            elif (SKIN == 3): phrase = "Um what the sigma"
+            cherv_say(phrase, skin=SKIN)
             json.dump(obj=settings, fp=open(json_path, 'w'))
             return
 

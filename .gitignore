@@ -6,4 +6,4 @@ dist/
 Cherv.egg-info/
 build/
 update_pypi.sh
-cherv/setting.json
+cherv/settings.json
